@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.3.2'
+ruby '3.3.3'
 
-gem "dotenv-rails", "~> 2.8"
+gem "dotenv-rails", "~> 3.1.2"
+#gem "dotenv-rails", "~> 2.8"
+
+gem 'net-pop', '~> 0.1.0'
+gem 'net-protocol', '~> 0.2.1'
+
 gem 'base64'
 gem 'bigdecimal'
 gem 'mutex_m'

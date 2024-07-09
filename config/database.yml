@@ -78,9 +78,18 @@ test:
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
-#
+# #
+# production:
+#   <<: *default
+#   database: rails_v6_1_7_base_0_production
+#   username: rails_v6_1_7_base_0
+#   password: <%= ENV['RAILS_V6_1_7_BASE_0_DATABASE_PASSWORD'] %>
+
+# [START cloudrun_rails_database]
 production:
   <<: *default
-  database: rails_v6_1_7_base_0_production
-  username: rails_v6_1_7_base_0
-  password: <%= ENV['RAILS_V6_1_7_BASE_0_DATABASE_PASSWORD'] %>
+  database: <%= ENV["PRODUCTION_DB_NAME"] %>
+  username: <%= ENV["PRODUCTION_DB_USERNAME"] %>
+  password: <%= Rails.application.credentials.gcp[:db_password] %>
+  host: "<%= ENV.fetch("DB_SOCKET_DIR") { '/cloudsql' } %>/<%= ENV["CLOUD_SQL_CONNECTION_NAME"] %>"
+# [END cloudrun_rails_database]
