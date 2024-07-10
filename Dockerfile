@@ -5,8 +5,8 @@
 # Pinning the OS to buster because the nodejs install script is buster-specific.
 # Be sure to update the nodejs install command if the base image OS is updated.
 # FROM ruby:2.6.3
-#FROM ruby:3.2-buster
-FROM ruby:3-bullseye
+FROM ruby:3.2-buster
+# FROM ruby:3-bullseye
 # FROM ruby:2.6.3-slim-buster
 
 # [END cloudrun_rails_base_image]
