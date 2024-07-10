@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.3'
 
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+gem 'jquery-rails'
+
 gem "dotenv-rails", "~> 3.1.2"
 #gem "dotenv-rails", "~> 2.8"
 
