@@ -8,6 +8,8 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 
+gem 'stripe'
+
 gem "dotenv-rails", "~> 3.1.2"
 #gem "dotenv-rails", "~> 2.8"
 
