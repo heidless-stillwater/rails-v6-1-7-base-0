@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: rails_v6_1_7_base_0_development
+  database: rails-test-deploy-0_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: rails_v6_1_7_base_0
+  #username: rails-test-deploy-0
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rails_v6_1_7_base_0_test
+  database: rails-test-deploy-0_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,9 +81,9 @@ test:
 # #
 # production:
 #   <<: *default
-#   database: rails_v6_1_7_base_0_production
-#   username: rails_v6_1_7_base_0
-#   password: <%= ENV['RAILS_V6_1_7_BASE_0_DATABASE_PASSWORD'] %>
+#   database: rails-test-deploy-0_production
+#   username: rails-test-deploy-0
+#   password: <%= ENV['rails-test-deploy-0_DATABASE_PASSWORD'] %>
 
 # [START cloudrun_rails_database]
 production:
