@@ -1,3 +1,10 @@
+
+html,
+body {
+  height: 100%;
+  background-color: #b8c0de;
+}
+
 .user-name {
   padding: 0 !important ;
   padding-left: 5px;
@@ -20,6 +27,15 @@
   padding-left: 0;
 }
   
+
+.navbar {
+  background-color: black !important;
+} 
+
+.nav-link {
+  color: white !important;
+}
+
 .nav.navbar-right {
   padding-bottom: 10px;
   padding-top: 5px;
@@ -73,10 +89,10 @@
 
 .jumbotron {
   text-align: center;
-  background-image: asset-url('meeting.png');
+  background-image: asset-url('SaaS-Business.jpg');
   background-size: cover;
   color: #fff;
-  font-family: 'Helvetica Neue' !important;
+  font-family: 'Verdana' !important;
   font-stretch: expanded;
   padding-top: 25px;
   padding-bottom: 25px;

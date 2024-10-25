@@ -1,11 +1,21 @@
 
 <% if current_user %>
   <h3>Welcome: <%= current_user.email %></h3>
+  <%= image_tag("SaaS-Business.jpg", style:"width: 800px")  %>
 <% else %>
-  <div class="jumbotron">
-    <h2>Saas Template</h2>
-    <p class="lead">
-      Provides baseline SaaS functionality. Devise Credentials Mgmt. Sendmail Authentication. Stripe integration.
+  <div class="jumbotron" style="height: 500px;">
+    <h2 class="text-left">SaaS Template</h2>
+    <p class="text-left">
+      Provides baseline SaaS functionality. <br><br> 
+      - Devise Credentials Mgmt. <br> 
+      - Sendmail Authentication. <br> 
+      - Stripe integration.
+    </p>
+    <h3 class="text-left">Google Cloud: Live Deploy</h3>
+    <p class="text-left">
+      - Cloud Run Svc <br>
+      - Cloud SQL: Postgres <br>
+      - Credentials/Secret Mgr
     </p>
   </div>
 
