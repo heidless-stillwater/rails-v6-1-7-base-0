@@ -20,6 +20,16 @@ steps:
       ]
     secretEnv: ["RAILS_KEY"]
 
+  - id: "seed users"
+    name: "gcr.io/google-appengine/exec-wrapper"
+    entrypoint: "bash"
+    args:
+      [
+        "-c",
+        "/buildstep/execute.sh -i gcr.io/${PROJECT_ID}/${_SERVICE_NAME} -s ${PROJECT_ID}:${_REGION}:${_INSTANCE_NAME} -e RAILS_MASTER_KEY=$$RAILS_KEY -- bundle exec rails members:seed_users"
+      ]
+    secretEnv: ["RAILS_KEY"]
+
 substitutions:
   _REGION: europe-west1
   _SERVICE_NAME: photo-app-0-svc
