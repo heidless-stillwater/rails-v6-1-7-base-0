@@ -3,78 +3,41 @@
   <div class="container">
     <h3>Welcome: <%= current_user.email %></h3>  
     <div class="jumbotron" style="height: 500px;">
-    <h2 class="text-left">SaaS Template</h2>
-    <p class="text-left">
-      Provides baseline SaaS functionality. <br><br> 
-      - Devise Credentials Mgmt. <br> 
-      - Sendmail Authentication. <br> 
-      - Stripe integration.
-    </p>
-    <h3 class="text-left">Google Cloud: Live Deploy</h3>
-    <p class="text-left">
-      - Cloud Run Svc <br>
-      - Cloud SQL: Postgres <br>
-      - Credentials/Secret Mgr
-    </p>
-  </div>
-
+      <h2 class="text-left">SaaS Template</h2>
+      <p class="text-left">
+        Provides baseline SaaS functionality. <br><br> 
+        - Devise Credentials Mgmt. <br> 
+        - Sendmail Authentication. <br> 
+        - Stripe integration.
+      </p>
+      <h3 class="text-left">Google Cloud: Live Deploy</h3>
+      <p class="text-left">
+        - Cloud Run Svc <br>
+        - Cloud SQL: Postgres <br>
+        - Credentials/Secret Mgr
+      </p>
+    </div>
   </div>
 <% else %>
-  <div class="jumbotron" style="height: 500px;">
-    <h2 class="text-left">SaaS Template</h2>
-    <p class="text-left">
-      Provides baseline SaaS functionality. <br><br> 
-      - Devise Credentials Mgmt. <br> 
-      - Sendmail Authentication. <br> 
-      - Stripe integration.
-    </p>
-    <h3 class="text-left">Google Cloud: Live Deploy</h3>
-    <p class="text-left">
-      - Cloud Run Svc <br>
-      - Cloud SQL: Postgres <br>
-      - Credentials/Secret Mgr
-    </p>
-    <br><br>
-    <p>
-      <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up', style: 'width:400px;' %>
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="plans clearfix">
-      <div class="col-lg-3 col-lg-offset-3 plan">
-        <h2>Premium Plan</h2>
-        <div class="price pull-right">
-          Price: $10
-        </div>
-        <div class="features">
-          <ul>
-            <li>Unlimited Image Uploads</li>
-            <li>Responsive design</li>
-            <li>Access anywhere</li>
-          </ul>
-        </div>
-        <p>
-          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-        </p>
-      </div>
-      <div class="col-lg-3 plan">
-        <h2>Amaze Plan</h2>
-        <div class="price pull-right">
-          Price: $20
-        </div>
-        <div class="features">
-          <ul>
-            <li>Unlimited Image Uploads</li>
-            <li>Responsive design</li>
-            <li>Access anywhere</li>
-            <li class='extra'>Unlimited projects</li>
-          </ul>
-        </div>
-        <p>
-          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-        </p>
-      </div>
+  <div class="container">
+    <div class="jumbotron" style="height: 500px;">
+      <h2 class="text-left">TEST: SaaS Template</h2>
+      <p class="text-left">
+        Provides baseline SaaS functionality. <br><br> 
+        - Devise Credentials Mgmt. <br> 
+        - Sendmail Authentication. <br> 
+        - Stripe integration.
+      </p>
+      <h3 class="text-left">Google Cloud: Live Deploy</h3>
+      <p class="text-left">
+        - Cloud Run Svc <br>
+        - Cloud SQL: Postgres <br>
+        - Credentials/Secret Mgr
+      </p>
+      <br><br>
+      <p>
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up', style: 'width:400px;' %>
+      </p>
     </div>
   </div>
 <% end %>
